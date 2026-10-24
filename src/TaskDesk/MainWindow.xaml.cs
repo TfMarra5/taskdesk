@@ -17,7 +17,23 @@ namespace TaskDesk;
 public partial class MainWindow : Window
 {
     public MainWindow()
+
     {
+
         InitializeComponent();
+    }
+    private void AddTask_Click(object sender, RoutedEventArgs e)
+    {
+        string taskTitle = TaskInput.Text.Trim();
+
+        if (string.IsNullOrWhiteSpace(taskTitle))
+        {
+            MessageBox.Show("Please enter a task.");
+            return;
+        }
+
+        TaskList.Items.Add(taskTitle);
+        TaskInput.Clear();
+        TaskInput.Focus();
     }
 }
