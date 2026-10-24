@@ -22,6 +22,33 @@
                 FontSize="14"
                 Foreground="Gray"
                 Margin="0,8,0,0" />
+
+            <Grid Margin="0,24,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <TextBox
+                    x:Name="TaskInput"
+                    Grid.Column="0"
+                    FontSize="16"
+                    Padding="10"
+                    VerticalContentAlignment="Center" />
+
+                <Button
+                    Grid.Column="1"
+                    Content="Add task"
+                    Margin="12,0,0,0"
+                    Padding="20,10"
+                    Click="AddTask_Click" />
+
+            </Grid>
+            <ListBox
+                x:Name="TaskList"
+                Margin="0,20,0,0"
+                Height="300"
+                FontSize="16" />
         </StackPanel>
     </Grid>
 </Window>
