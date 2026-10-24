@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TaskDesk"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="TaskDesk"
+        Height="600"
+        Width="900"
+        WindowStartupLocation="CenterScreen">
 
+    <Grid Margin="24">
+        <StackPanel>
+            <TextBlock
+                Text="TaskDesk"
+                FontSize="32"
+                FontWeight="Bold" />
+
+            <TextBlock
+                Text="Your tasks, in one place."
+                FontSize="14"
+                Foreground="Gray"
+                Margin="0,8,0,0" />
+        </StackPanel>
     </Grid>
 </Window>
